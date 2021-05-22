@@ -22,4 +22,9 @@ function init() {
     //reset index to 0
   //if the length of codes is equal to index
     //alert the user Congratulations!
+  key === codes[index] ? index += 1 : index = 0;
+  if (index === codes.length) {
+    alert('congratulations')
+    index = 0;
+  }
 }
