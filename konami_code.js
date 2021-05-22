@@ -14,8 +14,13 @@ const codes = [
 let index = 0;
 
 function init() {
-  let key = document.body.addEventListener('keydown', event => event.key);
-  console.log(key);
+  document.body.addEventListener('keydown', event => {
+    key === codes[index] ? index += 1 : index = 0;
+    if (index === codes.length) {
+      alert('congratulations')
+      index = 0;
+    }
+  });
   
   //if key is equal to codes at index
     //increment index
@@ -23,9 +28,4 @@ function init() {
     //reset index to 0
   //if the length of codes is equal to index
     //alert the user Congratulations!
-  key === codes[index] ? index += 1 : index = 0;
-  if (index === codes.length) {
-    alert('congratulations')
-    index = 0;
-  }
 }
