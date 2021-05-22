@@ -21,5 +21,5 @@ function init() {
   //otherwise
     //reset index to 0
   //if the length of codes is equal to index
-    //alert the user 
+    //alert the user Congratulations!
 }
