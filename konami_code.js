@@ -15,7 +15,7 @@ let index = 0;
 
 function init() {
   document.body.addEventListener('keydown', event => {
-    key === codes[index] ? index += 1 : index = 0;
+    event.key === codes[index] ? index += 1 : index = 0;
     if (index === codes.length) {
       alert('congratulations')
       index = 0;
